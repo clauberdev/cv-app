@@ -17,27 +17,12 @@ export default class GeneralInformation extends Component {
     }
 
 
-    handleChangeName = (e) => {
+    handleChange = (e) => {
+        const target = e.target;
+        const value = target.value
+        const name = target.name
         this.setState({
-            contact: {
-                name: e.target.value
-            }
-        });
-    };
-
-    handleChangeEmail = (e) => {
-        this.setState({
-            contact: {
-                email: e.target.value
-            }
-        });
-    };
-
-    handleChangeNumber = (e) => {
-        this.setState({
-            contact: {
-                number: e.target.value
-            }
+            contact: { [name]: value}
         });
     };
 
@@ -57,13 +42,13 @@ export default class GeneralInformation extends Component {
                 <form onSubmit={this.onSubmitContact}>
 
                     <label htmlFor="name">Name: </label>
-                    <input onChange={this.handleChangeName} value={contact.name} type="text" id="name" />
+                    <input name="name" onChange={this.handleChange} value={contact.name} type="text" id="name" />
 
                     <label htmlFor="email">Email: </label>
-                    <input onChange={this.handleChangeEmail} value={contact.email} type="text" id="email" />
+                    <input name="email" onChange={this.handleChangeEmail} value={contact.email} type="text" id="email" />
 
                     <label htmlFor="number">Phone number: </label>
-                    <input onChange={this.handleChangeNumber} value={contact.number} type="text" id="number" />
+                    <input name="number" onChange={this.handleChangeNumber} value={contact.number} type="text" id="number" />
                     <button type="submit">
                         Submit
                     </button>
