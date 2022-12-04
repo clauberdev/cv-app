@@ -1,0 +1,14 @@
+node_modules
+.DS_Store
+dist
+dist-ssr
+*.local replit.nix
+.upm
+tsconfig.json
+tsconfig.node.json
+vite.config.js.timestamp-1664574717106.mjs
+replit
+vite.config.js
+replit.nix
+.cache
+.cache
