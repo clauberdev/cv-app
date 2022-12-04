@@ -1,0 +1,9 @@
+.cache
+.replit
+tsconfig.node.json
+vite.config.js
+node_modules
+replit.nix
+tsconfig.json
+.upm
+vite.config.js.timestamp-1664574717106.mjs
