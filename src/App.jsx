@@ -1,15 +1,11 @@
 import './App.css';
 
-import GeneralInformation from './components/GeneralInformation';
+import Practical from './components/Practical';
 
 export default function App() {
-
-
-
     return (
         <main>
-            <GeneralInformation />
-
+            <Practical />
         </main>
     )
 }
